@@ -17,7 +17,7 @@ function App({users}) {
                         : ''
                 }
                 {
-                    users.linkheader ? <Route path={'/'} component={Models}/> : ''
+                    users.linkheader ? <Route path={'/models'} component={Models}/> : ''
 
                 }
                 {
@@ -25,7 +25,7 @@ function App({users}) {
                 }
 
                 {
-                    users.linkheader ? <Redirect to={'/'}/> : ''
+                    users.linkheader ? <Redirect to={'/models'}/> : ''
                 }
 
 
