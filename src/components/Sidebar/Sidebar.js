@@ -9,7 +9,7 @@ function Sidebar(props) {
             <div className={'sidebar-body'}>
                     <ul>
                         <li>
-                            <Link to={'/'}>
+                            <Link to={'/models/asosiy'}>
                                 <div className={'li-item'}>
                                     <div className={'icon'}>
                                         <svg  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@ function Sidebar(props) {
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/elonlar'}>
+                            <Link to={'/models/elonlar'}>
                                 <div className={'li-item'}>
                                     <div className={'icon'}>
                                         <svg  viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">

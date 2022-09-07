@@ -4,9 +4,6 @@ import {useState} from "react";
 
 function Asosiy(props) {
 
-
-
-
     return (
         <div className={'asosiy'}>
             <div className={'asosiy-header'}>

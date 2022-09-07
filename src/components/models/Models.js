@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import Navbar from "../Navbar/Navbar";
 import Asosiy from "../Asosiy/Asosiy";
+import Elonlar from "../elonlar/Elonlar";
 
 function Models({model,GetModel}){
 
@@ -15,7 +16,8 @@ function Models({model,GetModel}){
                 <Navbar/>
                 <div className={'routes'}>
                     <Switch>
-                        <Route path={'/'} element={<Asosiy/>}/>
+                        <Route path={'/models/asosiy'} component={Asosiy}/>
+                        <Route path={'/models/elonlar'} component={Elonlar}/>
                     </Switch>
                 </div>
             </div>
