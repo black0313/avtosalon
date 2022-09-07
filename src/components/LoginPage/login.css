@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.home-enter{
+    text-align: center;
+}
+.kirish-text{
+    text-align: center;
+}
+.kirish-input input{
+    padding: 6px;
+    width: 20%;
+}
+.kirish-input .input img{
+    margin-left: 10%;
+    position: absolute;
+    right: 41%;
+    cursor: pointer;
+    top: 40%;
+}
+.input{
+    position: relative;
+}
+.pasword{
+    margin-top: 15px;
+}
+.kirish-input .button{
+    margin-top: 15px;
+    padding: 1rem;
+    width: 20%;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
