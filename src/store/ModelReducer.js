@@ -4,11 +4,17 @@ import{apiCall} from "./api";
 const slice1 = createSlice({
     name: 'model',
     initialState:{
-        model:[]
+        model:[],
+        types:[]
     },
     reducers:{
         GetFrom: (state, action)=> {
-            state.model = action.payload
+            state.model = action.payload.data.data
+            console.log(state.model)
+        },
+        GetFromCarTypes: (state, action)=> {
+            state.types = action.payload.data.data
+            console.log(state.types)
         },
         SaveFrom: (state,action)=>{
             state.model.unshift(action.payload)
@@ -25,10 +31,16 @@ const slice1 = createSlice({
     }
 })
 
-export const GetModel=()=>apiCall({
-    url:'/category',
+export const GetModel=(data)=>apiCall({
+    url:'/category/marka?limit=5&page=1',
     method:'get',
     onSuccess:slice1.actions.GetFrom.type
+})
+
+export const GetFromCarTypes=(data)=>apiCall({
+    url: '/car/'+data,
+    method: 'get',
+    onsuccess: slice1.actions.GetFromCarTypes.type
 })
 
 export default slice1.reducer

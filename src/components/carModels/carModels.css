@@ -1,0 +1,18 @@
+.carWrap{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    width: 100vh;
+}
+.carWrap div{
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+.carWrap div:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.carModels h3{
+    margin-left: 10%;
+}

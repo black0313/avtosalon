@@ -9,6 +9,17 @@ function Login({users,saveusers}) {
 
     const [inputlogin, setLogin] = useState('')
     const [inputparol, setparol] = useState('')
+    const [activePassword,setActivePassword] = useState(false)
+    const [typeinput, Settype] = useState('password')
+
+    function toggle(){
+        // setActivePassword(!activePassword)
+        if (typeinput === 'text') {
+            Settype('password')
+        } else {
+            Settype('text')
+        }
+    }
 
     function login(event) {
         setLogin(event.target.value)
@@ -42,9 +53,8 @@ function Login({users,saveusers}) {
             <div className={`kirish-input`}>
                 <input type="text" value={inputlogin} onChange={login} className={'login'}/>
                 <div className={'input'}>
-                    <input value={inputparol} onChange={parol} className={'pasword'}
-                    />
-                    <img src={require('../../img/eye-slash.png')} alt=""/>
+                    <input type={typeinput} value={inputparol} onChange={parol} className={'pasword'}/>
+                    <img onClick={toggle} src={require('../../img/eye-slash.png')} alt=""/>
                 </div>
                 {
                     users.error ? <span className={'error'}>Login yoki parol xato !</span>:''
