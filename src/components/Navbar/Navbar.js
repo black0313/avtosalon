@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css'
 function Navbar(props) {
     return (
-        <div className={'navbar'}>
+        <div className={'navbars'}>
                 <div></div>
                 <div className={'navbar-right'}>
                     <div className={'messages'}>
